@@ -28,7 +28,7 @@ const (
 // Note: Values that are encrypted are decrypted using a global key
 func LoadConfigString(confReader *config.Config, group, field string) string {
 	return LoadConfigStringEncKey(confReader, group, field)
-}
+
 
 // LoadOptionalConfigString gets the value (as a string) for a field belonging to a group.
 // If the group and field are present - it returns the value
